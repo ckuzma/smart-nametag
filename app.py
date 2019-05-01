@@ -11,7 +11,7 @@ def root():
 
 @app.route('/iot', methods=['GET'])
 def iot():
-    return app.top + '<>' + app.bottom
+    return app.top + '|' + app.bottom
 
 @app.route('/update', methods=['GET'])
 def update():
