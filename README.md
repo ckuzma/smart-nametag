@@ -4,7 +4,7 @@
 
 The goal behind this project was to pair a Grove RGB two-line LCD screen with a NodeMCU (ESP8266) in order to display dynamic text from the web.  Accompanying the firmware code (in Arduino) is a small Python Flask webapp that serves up a minimal HTML page for updating the text as well as serves up the text in a format that the NodeMCU can understand.
 
-This assumes some prior knowledge of Python, AWS, and the EB CLI.  Instructions to repeat this project below.
+This assumes some prior knowledge of Python, AWS, and the EB CLI.  Instructions for how to copy this project found below.
 
 ## Photos
 - Prototype Phase
