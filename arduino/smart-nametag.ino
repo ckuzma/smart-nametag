@@ -70,6 +70,7 @@ void setup() {
   // Connect to WiFi
   WiFi.mode(WIFI_STA);
   WiFiMulti.addAP("WIFI_SSID", "WIFI_PASSWORD");
+  // WiFiMulti.addAP("WIFI_SSID", "WIFI_PASSWORD"); // Uncomment and modify for use with multiple WiFi credentials
 
   // Announce status
   upper_line = "Connected!";
