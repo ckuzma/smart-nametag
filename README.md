@@ -49,7 +49,13 @@ This assumes some prior knowledge of Python, AWS, and the EB CLI.  Instructions 
     - [Line 72](https://github.com/ckuzma/smart-nametag/blob/master/arduino/smart-nametag.ino#L72): Put your WiFi access point's SSID and password in the appropriate lines.
     - [Line 73](https://github.com/ckuzma/smart-nametag/blob/master/arduino/smart-nametag.ino#L73): You can uncomment if you want to seamlessly move your project between different WiFi environments and have it automatically connect.  Repeat this line to add multiple if you'd like!
 
-5. Flash the Arduino code to the NodeMCU.  Sit back, and enjoy!
+5. Flash the Arduino code to the NodeMCU.
+
+## How to update the LCD screen
+
+1. If you visit your deploy URL at the route */update* (*e.g. http://smart-nametag.us-west-2.elasticbeanstalk.com/update*) you will be brought to the web app portal that will allow you to enter text.
+
+2. Those more tech savvy will obviously pick up on the fact that the webapp is RESTful in nature and can modify their existing projects to directly *POST* data to the webapp. (See [line 23](https://github.com/ckuzma/smart-nametag/blob/master/application.py#L23) of the Flask application to get started.)
 
 ## Credits
 
