@@ -30,7 +30,7 @@ This assumes some prior knowledge of Python, AWS, and the EB CLI.  Instructions 
     - `eb init`
 
 5. Push and deploy your web app
-    - `eb create`
+    - `eb create` (or use `eb deploy` to update)
 
 6. Visit the URL for your deployment (*e.g. http://smart-nametag.us-west-2.elasticbeanstalk.com*) and ensure that it greets you with "Hello, world!"
 
