@@ -1,0 +1,39 @@
+html, body {
+  background-color: white;
+  font-family: Andale Mono, monospace;
+  font-size: 4vmin;
+  color: #1A1A1A;
+  margin: 2vmin;
+}
+
+input {
+  font-family: Andale Mono, monospace;
+  font-size: 4vmin;
+  padding: 1vmin;
+  border: 1px solid #1A1A1A;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+  width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin: 3% 10% 5% 10%;
+}
+
+.wrapper div {
+  width: 100%;
+}
+
+.wrapper input:nth-child(even) {
+  margin: 3vmin 0 6vmin 0;
+}
+
+.button {
+  background-color: #1A1A1A;
+  color: white;
+  -webkit-appearance: none;
+}

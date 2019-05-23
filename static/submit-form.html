@@ -1,20 +1,29 @@
-<form action="/submit" method="post">
-  <fieldset>
-    <legend>Update Screen:</legend>
-    Top line:<br>
-    <input type="text"
-      name="top"
-      value=""
-      oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-      type = "text"
-      maxlength = "16"><br>
-    Bottom line:<br>
-    <input type="text"
-      name="bottom"
-      value=""
-      oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-      type = "text"
-      maxlength = "16"><br><br>
-    <input type="submit" value="Submit" maxlength="16">
-  </fieldset>
-</form>
+<html>
+  <head>
+    <link rel="stylesheet" type= "text/css" href="css/style.css" />
+  </head>
+  <form action="/submit" method="post">
+    <fieldset>
+      <legend>Update Screen:</legend>
+      <div class="wrapper">
+        <div>Top line:</div>
+        <input
+          type="text"
+          name="top"
+          value=""
+          oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+          maxlength="16"
+        />
+        <div>Bottom line:</div>
+        <input
+          type="text"
+          name="bottom"
+          value=""
+          oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+          maxlength="16"
+        />
+        <input type="submit" value="Submit" class="button"/>
+      </div>
+    </fieldset>
+  </form>
+</html>
